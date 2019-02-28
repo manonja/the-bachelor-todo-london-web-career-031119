@@ -78,7 +78,8 @@ def get_average_age_for_season(data, season)
   ages = data.each collect do |people|
       people["age"].to_i
     end 
-  
+    
+  total_ages = ages.reduce(0){|sum, |}
     
 end
 
