@@ -68,10 +68,10 @@ def get_average_age_for_season(data, season)
     if seasons == season.to_sym
       attributes.collect do |people|
         ages = ages + people["age"].to_i
-        avg_age = ages / persons
       end
     end
   end
+  avg_age = ages / persons
   avg_age.round
 end
 
