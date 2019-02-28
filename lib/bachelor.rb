@@ -79,7 +79,9 @@ def get_average_age_for_season(data, season)
       people["age"].to_i
     end 
     
-  total_ages = ages.reduce(0){|sum, |}
+  total_ages = ages.reduce(0){|sum, age| sum += age}
+  persons_number = ages.count.to_f 
+  ages
     
 end
 
