@@ -60,17 +60,17 @@ end
 
 
 def get_average_age_for_season(data, season)
-  # code here
-  ages = 0
-  avg_age = 0
-  persons_number = data[season].length
-  data.each do |seasons, attributes|
-    if seasons == season
-      attributes.collect do |people|
-        ages += people["age"].to_i
-      end
-    end
-  end
-  avg_age = (ages / persons_number).round
+  # # code here
+  # ages = 0
+  # avg_age = 0
+  # persons_number = data[season].length
+  # data.each do |seasons, attributes|
+  #   if seasons == season
+  #     attributes.collect do |people|
+  #       ages += people["age"].to_i
+  #     end
+  #   end
+  # end
+  # avg_age = (ages / persons_number).round
 end
 
