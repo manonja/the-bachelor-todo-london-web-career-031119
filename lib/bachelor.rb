@@ -67,7 +67,7 @@ def get_average_age_for_season(data, season)
   data.each do |seasons, attributes|
     if seasons == season.to_sym
       attributes.collect do |people|
-        ages + people["age"].to_i
+        ages += people["age"].to_i
       end
     end
   end
