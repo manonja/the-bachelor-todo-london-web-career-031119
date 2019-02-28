@@ -75,7 +75,6 @@ def get_average_age_for_season(data, season)
   # avg_age = (ages / persons_number).round
   
   # solution with help of people
-  avg_age = 0 
   ages = data.each collect do |people|
       people["age"].to_i
     end 
@@ -83,8 +82,7 @@ def get_average_age_for_season(data, season)
   total_ages = ages.reduce(0){|sum, age| sum += age}
   persons_number = ages.count.to_f 
   
-  avg_age = (total_ages / persons_number).round
-  avg_age
-    
+  (total_ages / persons_number).round
+  
 end
 
